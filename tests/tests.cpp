@@ -336,3 +336,4 @@ TEST_CASE("numbers", "[insertion_sort]") {
   int *arr = ll_to_array(sorted);
   REQUIRE(arrays_equal(arr, input_sorted, len));
 }
+//2
