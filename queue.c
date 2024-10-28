@@ -87,3 +87,4 @@ int dequeueStack(queue *q) {
    int element = pop(&q->stack.head); 
    return element; 
 }
+//
