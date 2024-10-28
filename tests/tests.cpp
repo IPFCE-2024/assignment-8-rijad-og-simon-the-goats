@@ -11,7 +11,7 @@ extern "C" {
 
 TEST_CASE("initialize", "[queue]") {
   queue q;
-  initialize(&q);
+  init_queue(&q);
   REQUIRE(q.front == nullptr);
   REQUIRE(q.rear == nullptr);
   REQUIRE(q.size == 0);
@@ -117,7 +117,7 @@ TEST_CASE("dequeue", "[queue]") {
 
 TEST_CASE("queue", "[queue]") {
   queue q;
-  initialize(&q);
+  init_queue(&q);
   REQUIRE(empty(&q));
   const int x0 = 2;
   const int x1 = 3;
