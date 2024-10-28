@@ -278,61 +278,61 @@ static const char *GREEN = "\033[32m";
 
 TEST_CASE("positive-numbers", "[insertion_sort]") {
   const int input[] = {5, 22, 11, 33, 3, 2, 1};
-//   const int len = sizeof(input) / sizeof(int);
+  const int len = sizeof(input) / sizeof(int);
   const int input_sorted[] = {1, 2, 3, 5, 11, 22, 33};
 
   INSERTION_SORT_TEST_CASE(input, input_sorted);
 
-//   node *list = ll_from_array(input, len);
-//   node *sorted = isort(list);
-//   int *arr = ll_to_array(sorted);
-//   bool equal = arrays_equal(arr, input_sorted, len);
-//   if (!equal) {
-//     fprintf(stderr, "%sExpected:%s\n", GREEN, RESET);
-//     int_array_print(input_sorted, len);
-//     fprintf(stderr, "%sGot:%s\n", RED, RESET);
-//     int_array_print(arr, len);
-//   }
-//   REQUIRE(arrays_equal(arr, input_sorted, len));
+  node *list = ll_from_array(input, len);
+  node *sorted = isort(list);
+  int *arr = ll_to_array(sorted);
+  bool equal = arrays_equal(arr, input_sorted, len);
+  if (!equal) {
+    fprintf(stderr, "%sExpected:%s\n", GREEN, RESET);
+    int_array_print(input_sorted, len);
+    fprintf(stderr, "%sGot:%s\n", RED, RESET);
+    int_array_print(arr, len);
+  }
+  REQUIRE(arrays_equal(arr, input_sorted, len));
 }
 
 TEST_CASE("negative-numbers", "[insertion_sort]") {
   const int input[] = {-5, -22, -11, -33, -3, -2, -1};
-  // const int len = sizeof(input) / sizeof(int);
+  const int len = sizeof(input) / sizeof(int);
   const int input_sorted[] = {-33, -22, -11, -5, -3, -2, -1};
 
   INSERTION_SORT_TEST_CASE(input, input_sorted);
 
-  // node* list = ll_from_array(input, len);
-  // node* sorted = isort(list);
-  // int* arr = ll_to_array(sorted);
-  // REQUIRE(arrays_equal(arr, input_sorted, len));
+  node* list = ll_from_array(input, len);
+  node* sorted = isort(list);
+  int* arr = ll_to_array(sorted);
+  REQUIRE(arrays_equal(arr, input_sorted, len));
 }
 
 TEST_CASE("2-numbers", "[insertion_sort]") {
   const int input[] = {1, 10};
-//   const int len = sizeof(input) / sizeof(int);
+  const int len = sizeof(input) / sizeof(int);
   const int input_sorted[] = {1, 10};
 
   INSERTION_SORT_TEST_CASE(input, input_sorted);
 
-//   node *list = ll_from_array(input, len);
-//   node *sorted = isort(list);
-//   int *arr = ll_to_array(sorted);
-//   REQUIRE(arrays_equal(arr, input_sorted, len));
+  node *list = ll_from_array(input, len);
+  node *sorted = isort(list);
+  int *arr = ll_to_array(sorted);
+  REQUIRE(arrays_equal(arr, input_sorted, len));
 }
 
 TEST_CASE("numbers", "[insertion_sort]") {
   const int input[] = {3,  5,  11, 2,  16, 18, 6,  4,  -14, 9,
                        -7, 20, 10, 19, 8,  1,  17, 13, 15,  -12};
-//   const int len = sizeof(input) / sizeof(int);
+  const int len = sizeof(input) / sizeof(int);
   const int input_sorted[] = {-14, -12, -7, 1,  2,  3,  4,  5,  6,  8,
                               9,   10,  11, 13, 15, 16, 17, 18, 19, 20};
 
   INSERTION_SORT_TEST_CASE(input, input_sorted);
 
-//   node *list = ll_from_array(input, len);
-//   node *sorted = isort(list);
-//   int *arr = ll_to_array(sorted);
-//   REQUIRE(arrays_equal(arr, input_sorted, len));
+  node *list = ll_from_array(input, len);
+  node *sorted = isort(list);
+  int *arr = ll_to_array(sorted);
+  REQUIRE(arrays_equal(arr, input_sorted, len));
 }
