@@ -1,0 +1,12 @@
+(a) Hvor mange aritmetiske operationer (+, −, ∗, /) er nødvendige for at beregne fact(5)?
+
+Programmet har en løkke, der kører fra 1 til n. Inden i løkken bliver der foretaget en multiplikation pr. iteration, hvor "f" bliver opdateret ( "f = i * f"). For at beregne fact(5) kører løkken 5 gange, så der bliver udført 5 multiplikationer.
+
+Derfor kræver det 5 aritmetiske operationer for at beregne fact(5).
+
+
+(b) Hvor mange aritmetiske operationer (+, −, ∗, /) er nødvendige for at beregne fact(n) for et vilkårligt positivt heltal n?
+
+For at beregne fact(n) kører løkken fra 1 til n, og for hver iteration udføres en multiplikation. Antallet af operationer afhænger derfor direkte af værdien af n.
+
+Så der kræves n aritmetiske operationer for at beregne fact(n).
